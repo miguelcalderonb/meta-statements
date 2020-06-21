@@ -1,0 +1,33 @@
+{
+  "name": "miguelcalderonb/meta-statements",
+  "type": "library",
+  "description": "Meta-statements is a PHP library that allow to execute statements dinamically.",
+  "keywords": [
+    "metaprogramming",
+    "meta",
+    "statements",
+    "dinamic"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Miguel Calderon"
+    }
+  ],
+  "require": {
+    "php": "^7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8.35 || ^5.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "MTStatements\\": "src/MTStatements/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "MTStatements\\Test\\": "test/MTStatements/"
+    }
+  }
+}
