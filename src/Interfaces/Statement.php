@@ -1,5 +1,5 @@
 <?php
-namespace MTStatements\Interfaces;
+namespace Miguelcalderonb\MTStatements\Interfaces;
 
 
 interface Statement

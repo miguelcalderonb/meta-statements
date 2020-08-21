@@ -1,8 +1,8 @@
 <?php
-namespace MTStatements\Conditionals;
+namespace Miguelcalderonb\MTStatements\Conditionals;
 
-use MTStatements\Interfaces\Statement;
-use MTStatements\Structs\StatementIfList;
+use Miguelcalderonb\MTStatements\Interfaces\Statement;
+use Miguelcalderonb\MTStatements\Structs\StatementIfList;
 
 class StmIfMulti implements Statement
 {

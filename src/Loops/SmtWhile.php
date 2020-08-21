@@ -1,8 +1,8 @@
 <?php
-namespace MTStatements\Loops;
+namespace Miguelcalderonb\MTStatements\Loops;
 
-use MTStatements\Structs\LoopRestriction;
-use MTStatements\Interfaces\Statement;
+use Miguelcalderonb\MTStatements\Structs\LoopRestriction;
+use Miguelcalderonb\MTStatements\Interfaces\Statement;
 
 class SmtWhile implements Statement
 {

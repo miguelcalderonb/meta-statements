@@ -1,5 +1,5 @@
 <?php
-namespace MTStatements\Structs;
+namespace Miguelcalderonb\MTStatements\Structs;
 
 class LoopRestriction
 {

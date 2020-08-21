@@ -1,7 +1,7 @@
 <?php
-namespace MTStatements;
+namespace Miguelcalderonb\MTStatements;
 
-use MTStatements\Interfaces\Statement;
+use Miguelcalderonb\MTStatements\Interfaces\Statement;
 
 class StatementList
 {

@@ -1,7 +1,7 @@
 <?php
-namespace MTStatements\Structs;
+namespace Miguelcalderonb\MTStatements\Structs;
 
-use MTStatements\Conditionals\StmIf;
+use Miguelcalderonb\MTStatements\Conditionals\StmIf;
 
 class StatementIfList
 {

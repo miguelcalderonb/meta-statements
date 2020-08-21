@@ -1,9 +1,9 @@
 <?php
-namespace MTStatements\Loops;
+namespace Miguelcalderonb\MTStatements\Loops;
 
-use MTStatements\BasicOperation;
-use MTStatements\Conditionals\SmtIfExec;
-use MTStatements\Structs\LoopRestriction;
+use Miguelcalderonb\MTStatements\BasicOperation;
+use Miguelcalderonb\MTStatements\Conditionals\SmtIfExec;
+use Miguelcalderonb\MTStatements\Structs\LoopRestriction;
 
 class SmtWhileExec
 {

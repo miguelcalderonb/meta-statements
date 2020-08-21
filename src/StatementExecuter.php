@@ -1,5 +1,5 @@
 <?php
-namespace MTStatements;
+namespace Miguelcalderonb\MTStatements;
 
 class StatementExecuter
 {

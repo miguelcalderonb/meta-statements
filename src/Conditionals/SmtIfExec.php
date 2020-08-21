@@ -1,5 +1,5 @@
 <?php
-namespace MTStatements\Conditionals;
+namespace Miguelcalderonb\MTStatements\Conditionals;
 
 class SmtIfExec
 {

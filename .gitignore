@@ -1,3 +1,5 @@
 vendor/*
 test/*
 composer.lock
+/.project
+.idea

@@ -1,7 +1,7 @@
 {
   "name": "miguelcalderonb/meta-statements",
   "type": "library",
-  "description": "Meta-statements is a PHP library that allow to execute statements dinamically.",
+  "description": "Meta-statements is a PHP library that allows execute statements dinamically.",
   "keywords": [
     "metaprogramming",
     "meta",
@@ -22,12 +22,9 @@
   },
   "autoload": {
     "psr-4": {
-      "MTStatements\\": "src/MTStatements/"
+      "Miguelcalderonb\\MTStatements\\": "src/"
     }
   },
   "autoload-dev": {
-    "psr-4": {
-      "MTStatements\\Test\\": "test/MTStatements/"
-    }
   }
 }
