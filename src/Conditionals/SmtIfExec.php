@@ -3,7 +3,7 @@ namespace Miguelcalderonb\MTStatements\Conditionals;
 
 class SmtIfExec
 {
-    public static function run($first, String $operator, $second, $execute)
+    public static function run($first, String $operator, $second, $execute = null)
     {
         $result = null;
 
@@ -53,8 +53,6 @@ class SmtIfExec
             return $result;
         }
 
-        if ($result) {
-            return $execute($result, $first, $operator, $second);
-        }
+        return $execute($result, $first, $operator, $second);
     }
 }

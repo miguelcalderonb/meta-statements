@@ -10,7 +10,7 @@ class StmIfMulti implements Statement
 
     private $execute;
 
-    public function __construct(StatementIfList $list, $execute)
+    public function __construct(StatementIfList $list, $execute = null)
     {
         $this->list = $list;
         $this->execute = $execute;
@@ -36,9 +36,9 @@ class StmIfMulti implements Statement
             }
         }
 
-        if ($current) {
+        if ($this->execute !== null) {
             $function = $this->execute;
-            return $function();
+            return $function($current);
         }
 
         return $current;
