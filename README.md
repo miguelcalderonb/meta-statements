@@ -74,7 +74,8 @@ $ifStatement = new StmIf(10, '==', 10, $customFunction);
 $ifStatement->run(); //Output: Allowed
 
 $ifStatement->second =  20;
-$ifStatement->run(); //Output: Rejected
+$ifStatement->run();
+//Output: Rejected
 
 ```
 
@@ -106,6 +107,8 @@ $customFunction = function($result) {
 
 $stmMulti = new StmIfMulti($listStm, $customFunction);
 $stmMulti->run();
+
+//Output: Value between 1 and 7
 ```
 
 ### While Loop:
