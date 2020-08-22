@@ -4,7 +4,7 @@ namespace Miguelcalderonb\MTStatements\Loops;
 use Miguelcalderonb\MTStatements\Structs\LoopRestriction;
 use Miguelcalderonb\MTStatements\Interfaces\Statement;
 
-class SmtWhile implements Statement
+class StmWhile implements Statement
 {
     public $first;
 
@@ -27,6 +27,6 @@ class SmtWhile implements Statement
 
     public function run()
     {
-        SmtWhileExec::run($this->first, $this->operator, $this->second, $this->restriction, $this->execute);
+        StmWhileExec::run($this->first, $this->operator, $this->second, $this->restriction, $this->execute);
     }
 }

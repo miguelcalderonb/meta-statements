@@ -22,6 +22,6 @@ class StmIf implements Statement
 
     public function run()
     {
-        return SmtIfExec::run($this->first, $this->operator, $this->second, $this->execute);
+        return StmIfExec::run($this->first, $this->operator, $this->second, $this->execute);
     }
 }

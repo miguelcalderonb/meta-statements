@@ -2,14 +2,14 @@
 namespace Miguelcalderonb\MTStatements\Loops;
 
 use Miguelcalderonb\MTStatements\BasicOperation;
-use Miguelcalderonb\MTStatements\Conditionals\SmtIfExec;
+use Miguelcalderonb\MTStatements\Conditionals\StmIfExec;
 use Miguelcalderonb\MTStatements\Structs\LoopRestriction;
 
-class SmtWhileExec
+class StmWhileExec
 {
     public static function run($first, String $operator, $second, LoopRestriction $restriction, $execute)
     {
-        while (SmtIfExec::run($first, $operator, $second, null)) {
+        while (StmIfExec::run($first, $operator, $second, null)) {
 
             if ($restriction->typeAction === 'before') {
                 $first = self::restriction($first, $restriction);

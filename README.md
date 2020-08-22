@@ -22,9 +22,9 @@ composer require miguelcalderonb/meta-statements
 Simple (Static Syntax)
 
 ```php
-use Miguelcalderonb\MTStatements\Conditionals\SmtIfExec;
+use Miguelcalderonb\MTStatements\Conditionals\StmIfExec;
 
-SmtIfExec::run(10, '==', 10);
+StmIfExec::run(10, '==', 10);
 //Output: bool(true)
 ```
 
@@ -40,7 +40,7 @@ $ifStatement->run(); //Output: bool(true)
 Execute function after statement executed
 
 ```php
-use Miguelcalderonb\MTStatements\Conditionals\SmtIfExec;
+use Miguelcalderonb\MTStatements\Conditionals\StmIfExec;
 
 $customFunction = function ($result ) {
     if ($result) {
@@ -50,10 +50,10 @@ $customFunction = function ($result ) {
     return 'Rejected';
 };
 
-SmtIfExec::run(10, '!=', 10, $customFunction);
+StmIfExec::run(10, '==', 10, $customFunction);
 //Output: Allowed
 
-SmtIfExec::run(10, '==', 20, $customFunction);
+StmIfExec::run(10, '==', 20, $customFunction);
 //Output: Rejected
 ```
 
@@ -85,16 +85,16 @@ Execute three if at the same time  (Object Syntax)
 ```php
 use Miguelcalderonb\MTStatements\Conditionals\StmIf;
 use Miguelcalderonb\MTStatements\Structs\StatementIfList;
+use Miguelcalderonb\MTStatements\Conditionals\StmIfMulti;
 
 $value = 7;
 
 $firstStm = new StmIf($value, '>=', 1, null, '&&');
 $secondStm = new StmIf($value, '<=', 7, null);
 
-$listStamte = new StatementIfList();
-
-$listStamte->add($firstStm);
-$listStamte->add($secondStm);
+$listStm = new StatementIfList();
+$listStm->add($firstStm);
+$listStm->add($secondStm);
 
 $customFunction = function($result) {
     if ($result) {
@@ -104,21 +104,21 @@ $customFunction = function($result) {
     return 'Value between 1 and 7';
 };
 
-$stmMulti = new StmIfMulti($listStamte, $customFunction);
-$stmMulti->run(); //Output: Value between 1 and 7
+$stmMulti = new StmIfMulti($listStm, $customFunction);
+$stmMulti->run();
 ```
 
 ### While Loop:
 ```php
 use Miguelcalderonb\MTStatements\Structs\LoopRestriction;
-use Miguelcalderonb\MTStatements\Loops\SmtWhileExec;
+use Miguelcalderonb\MTStatements\Loops\StmWhileExec;
 
 $execInEachLoop = function($firstValue) {
     echo $firstValue."\n";
 };
 
 $restrict = new LoopRestriction('+', 'before', 1);
-SmtWhileExec::run(0, '<=', 10, $restrict, $execInEachLoop);
+StmWhileExec::run(0, '<=', 10, $restrict, $execInEachLoop);
 
 // Output
 // 1
@@ -131,4 +131,5 @@ SmtWhileExec::run(0, '<=', 10, $restrict, $execInEachLoop);
 // 8
 // 9
 // 10
+// 11
 ```

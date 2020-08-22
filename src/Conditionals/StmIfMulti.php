@@ -32,7 +32,7 @@ class StmIfMulti implements Statement
             if (isset($stmList[$i+1])) {
                 $nextStm = $stmList[$i+1];
 
-                $current = SmtIfExec::run($current, $currentStm->logicalOperator, $nextStm->run(), null);
+                $current = StmIfExec::run($current, $currentStm->logicalOperator, $nextStm->run(), null);
             }
         }
 

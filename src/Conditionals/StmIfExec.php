@@ -1,7 +1,7 @@
 <?php
 namespace Miguelcalderonb\MTStatements\Conditionals;
 
-class SmtIfExec
+class StmIfExec
 {
     public static function run($first, String $operator, $second, $execute = null)
     {
