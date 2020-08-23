@@ -102,7 +102,7 @@ $customFunction = function($result) {
         return 'Value between 1 and 7';
     }
 
-    return 'Value between 1 and 7';
+    return 'Value is not between 1 and 7';
 };
 
 $stmMulti = new StmIfMulti($listStm, $customFunction);

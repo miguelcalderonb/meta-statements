@@ -18,7 +18,7 @@
     "php": "^7.0"
   },
   "require-dev": {
-    "phpunit/phpunit": "^4.8.35 || ^5.7"
+    "phpunit/phpunit": "^9"
   },
   "autoload": {
     "psr-4": {
@@ -26,5 +26,8 @@
     }
   },
   "autoload-dev": {
+    "psr-4": {
+      "TestUtils\\": "tests/utils/"
+    }
   }
 }

@@ -27,6 +27,6 @@ class StmWhile implements Statement
 
     public function run()
     {
-        StmWhileExec::run($this->first, $this->operator, $this->second, $this->restriction, $this->execute);
+        return StmWhileExec::run($this->first, $this->operator, $this->second, $this->restriction, $this->execute);
     }
 }

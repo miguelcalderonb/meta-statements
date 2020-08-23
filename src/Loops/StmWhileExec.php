@@ -21,6 +21,8 @@ class StmWhileExec
                 $first = self::restriction($first, $restriction);
             }
         }
+
+        return [$first, $operator, $second];
     }
 
     private static function restriction($value, $restriction)
