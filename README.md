@@ -33,7 +33,8 @@ Simple (Object Syntax)
 use Miguelcalderonb\MTStatements\Conditionals\StmIf;
 
 $ifStatement = new StmIf(10, '==', 10);
-$ifStatement->run(); //Output: bool(true)
+$ifStatement->run(); 
+//Output: bool(true)
 
 ```
 
